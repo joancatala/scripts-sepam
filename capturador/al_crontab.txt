@@ -1,0 +1,2 @@
+# El script "capturador.sh" que genera una imagen png de todas las webs municipales
+00 09 1,15 * * /usr/bin/capturador.sh
