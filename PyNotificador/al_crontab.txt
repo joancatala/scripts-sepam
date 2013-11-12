@@ -1,2 +1,0 @@
-################ PyNotificador.py #######################################
-0 8 1 1,3,5,7,9,11 * python /usr/bin/PyNotificador.py
