@@ -1,0 +1,3 @@
+
+PyActualizador està a /usr/bin
+L'executem cada 2 messos (mirar fitxer "al_contrab.txt"

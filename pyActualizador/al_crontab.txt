@@ -1,0 +1,2 @@
+# Notifiquem als ajuntaments sobre les dades municipals el dia 28 cada 2 messos.
+00 09 28 */2 * python /usr/bin/PyActualizador.py
