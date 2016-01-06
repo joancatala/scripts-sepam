@@ -1,4 +1,3 @@
-#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ##############################################################################
 # Haccemos unas capturas de pantalla de los portales webs municipales        #
 # adheridos al proyecto Portals Web Municipals de la Diputacion de Castellon #
