@@ -1,12 +1,10 @@
-#NOU FITXER QUE VULL IMPLEMENTAR AMB CUTPYCAT I FICAR-HO BE AL GIT
-
 ##############################################################################
 # Haccemos unas capturas de pantalla de los portales webs municipales        #
 # adheridos al proyecto Portals Web Municipals de la Diputacion de Castellon #
 #                                                                            #
 # Responsables: grupotic@dipcas.es                                           #
 #                                                                            #
-# Actualizacion de 11 de junio 2003 para que funcione en las nuevas rutas    #
+# Actualizacion de 6 de gener 2016 para que funcione en las nuevas rutas     #
 # del servidor web NGINX y guardar las ultimas capturas en un directorio     #
 # separado para mostrarlas en el listado de capturas del Projecte Web        #
 # Municipal en http://sepam.dipcas.es/portals                                #
@@ -26,226 +24,226 @@ mkdir ultimes_captures
 mkdir $NOW
 cd $NOW
 
-#Empezamos a lanzar las capturas de pantalla
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.ajuntamentdain.es ajuntamentdain.es.png
+#Empezamos a lanzar las capturas de pantalla amb CutyCapt
+CutyCapt --min-width=1600  --url=http://www.ajuntamentdain.es --out=ajuntamentdain.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.albocasser.es albocasser.es.png
+CutyCapt --min-width=1600  --url=http://www.albocasser.es --out=albocasser.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.lalcora.es lalcora.es.png
+CutyCapt --min-width=1600  --url=http://www.lalcora.es --out=lalcora.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.alcudiadeveo.es alcudiadeveo.es.png
+CutyCapt --min-width=1600  --url=http://www.alcudiadeveo.es --out=alcudiadeveo.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.alfondeguilla.es alfondeguilla.es.png
+CutyCapt --min-width=1600  --url=http://www.alfondeguilla.es --out=alfondeguilla.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.algimiadealmonacid.es algimiadealmonacid.es.png
+CutyCapt --min-width=1600  --url=http://www.algimiadealmonacid.es --out=algimiadealmonacid.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.almedijar.es almedijar.es.png
+CutyCapt --min-width=1600  --url=http://www.almedijar.es --out=almedijar.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.altura.es altura.es.png
+CutyCapt --min-width=1600  --url=http://www.altura.es --out=altura.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.aranuel.es aranuel.es.png
+CutyCapt --min-width=1600  --url=http://www.aranuel.es --out=aranuel.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.aresdelmaestrat.es aresdelmaestrat.es.png
+CutyCapt --min-width=1600  --url=http://www.aresdelmaestrat.es --out=aresdelmaestrat.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.argelita.es argelita.es.png
+CutyCapt --min-width=1600  --url=http://www.argelita.es --out=argelita.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.artana.es artana.es.png
+CutyCapt --min-width=1600  --url=http://www.artana.es --out=artana.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.atzenetadelmaestrat.es atzenetadelmaestrat.es.png
+CutyCapt --min-width=1600  --url=http://www.atzenetadelmaestrat.es --out=atzenetadelmaestrat.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.ayodar.es ayodar.es.png
+CutyCapt --min-width=1600  --url=http://www.ayodar.es --out=ayodar.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.azuebar.es azuebar.es.png
+CutyCapt --min-width=1600  --url=http://www.azuebar.es --out=azuebar.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.elballestar.es elballestar.es.png
+CutyCapt --min-width=1600  --url=http://www.elballestar.es --out=elballestar.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.barracas.es barracas.es.png
+CutyCapt --min-width=1600  --url=http://www.barracas.es --out=barracas.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.bejis.es bejis.es.png
+CutyCapt --min-width=1600  --url=http://www.bejis.es --out=bejis.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.benafer.es benafer.es.png
+CutyCapt --min-width=1600  --url=http://www.benafer.es --out=benafer.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.benasal.es benasal.es.png
+CutyCapt --min-width=1600  --url=http://www.benasal.es --out=benasal.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.benafigos.es benafigos.es.png
+CutyCapt --min-width=1600  --url=http://www.benafigos.es --out=benafigos.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.benlloch.es benlloch.es.png
+CutyCapt --min-width=1600  --url=http://www.benlloch.es --out=benlloch.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.betxi.es betxi.es.png
+CutyCapt --min-width=1600  --url=http://www.betxi.es --out=betxi.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.borriol.es borriol.es.png
+CutyCapt --min-width=1600  --url=http://www.borriol.es --out=borriol.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.cabanes.es cabanes.es.png
+CutyCapt --min-width=1600  --url=http://www.cabanes.es --out=cabanes.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.calig.es calig.es.png
+CutyCapt --min-width=1600  --url=http://www.calig.es --out=calig.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.canetloroig.es canetloroig.es.png
+CutyCapt --min-width=1600  --url=http://www.canetloroig.es --out=canetloroig.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.castelldecabres.es castelldecabres.es.png
+CutyCapt --min-width=1600  --url=http://www.castelldecabres.es --out=castelldecabres.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.castellfort.es castellfort.es.png
+CutyCapt --min-width=1600  --url=http://www.castellfort.es --out=castellfort.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.castellnovo.es castellnovo.es.png
+CutyCapt --min-width=1600  --url=http://www.castellnovo.es --out=castellnovo.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.castillodevillamalefa.es castillodevillamalefa.es.png
+CutyCapt --min-width=1600  --url=http://www.castillodevillamalefa.es --out=castillodevillamalefa.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.cati.es cati.es.png
+CutyCapt --min-width=1600  --url=http://www.cati.es --out=cati.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.caudiel.es caudiel.es.png
+CutyCapt --min-width=1600  --url=http://www.caudiel.es --out=caudiel.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.chovar.es chovar.es.png
+CutyCapt --min-width=1600  --url=http://www.chovar.es --out=chovar.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.cinctorres.es cinctorres.es.png
+CutyCapt --min-width=1600  --url=http://www.cinctorres.es --out=cinctorres.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.cirat.es cirat.es.png
+CutyCapt --min-width=1600  --url=http://www.cirat.es --out=cirat.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.cortesdearenoso.es cortesdearenoso.es.png
+CutyCapt --min-width=1600  --url=http://www.cortesdearenoso.es --out=cortesdearenoso.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.costur.es costur.es.png
+CutyCapt --min-width=1600  --url=http://www.costur.es --out=costur.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.lescovesdevinroma.es lescovesdevinroma.es.png
+CutyCapt --min-width=1600  --url=http://www.lescovesdevinroma.es --out=lescovesdevinroma.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.eltoro.es eltoro.es.png
+CutyCapt --min-width=1600  --url=http://www.eltoro.es --out=eltoro.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.eslida.es eslida.es.png
+CutyCapt --min-width=1600  --url=http://www.eslida.es --out=eslida.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.espadilla.es espadilla.es.png
+CutyCapt --min-width=1600  --url=http://www.espadilla.es --out=espadilla.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.fanzara.es fanzara.es.png
+CutyCapt --min-width=1600  --url=http://www.fanzara.es --out=fanzara.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.figueroles.es figueroles.es.png
+CutyCapt --min-width=1600  --url=http://www.figueroles.es --out=figueroles.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.forcall.es forcall.es.png
+CutyCapt --min-width=1600  --url=http://www.forcall.es --out=forcall.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.fuentelareina.es fuentelareina.es.png
+CutyCapt --min-width=1600  --url=http://www.fuentelareina.es --out=fuentelareina.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.fuentesdeayodar.es fuentesdeayodar.es.png
+CutyCapt --min-width=1600  --url=http://www.fuentesdeayodar.es --out=fuentesdeayodar.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.gaibiel.es gaibiel.es.png
+CutyCapt --min-width=1600  --url=http://www.gaibiel.es --out=gaibiel.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.geldo.es geldo.es.png
+CutyCapt --min-width=1600  --url=http://www.geldo.es --out=geldo.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.herbes.es herbes.es.png
+CutyCapt --min-width=1600  --url=http://www.herbes.es --out=herbes.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.higueras.es higueras.es.png
+CutyCapt --min-width=1600  --url=http://www.higueras.es --out=higueras.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.lajana.es lajana.es.png
+CutyCapt --min-width=1600  --url=http://www.lajana.es --out=lajana.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.lallosa.es lallosa.es.png
+CutyCapt --min-width=1600  --url=http://www.lallosa.es --out=lallosa.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.ajuntamentdelamata.es ajuntamentdelamata.es.png
+CutyCapt --min-width=1600  --url=http://www.ajuntamentdelamata.es --out=ajuntamentdelamata.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.lesuseres.es lesuseres.es.png
+CutyCapt --min-width=1600  --url=http://www.lesuseres.es --out=lesuseres.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.lucenadelcid.es lucenadelcid..es.png
+CutyCapt --min-width=1600  --url=http://www.lucenadelcid.es --out=lucenadelcid..es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.ludiente.es ludiente.es.png
+CutyCapt --min-width=1600  --url=http://www.ludiente.es --out=ludiente.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.altopalancia.es altopalancia.es.png
+CutyCapt --min-width=1600  --url=http://www.altopalancia.es --out=altopalancia.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.altmaestrat.es altmaestrat.es.png
+CutyCapt --min-width=1600  --url=http://www.altmaestrat.es --out=altmaestrat.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.baixmaestrat.es baixmaestrat.es.png
+CutyCapt --min-width=1600  --url=http://www.baixmaestrat.es --out=baixmaestrat.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.elsports.es elsports.es.png
+CutyCapt --min-width=1600  --url=http://www.elsports.es --out=elsports.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.planaalta.es planaalta.es.png
+CutyCapt --min-width=1600  --url=http://www.planaalta.es --out=planaalta.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.espadan-mijares.es espadan-mijares.es.png
+CutyCapt --min-width=1600  --url=http://www.espadan-mijares.es --out=espadan-mijares.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.matet.es matet.es.png
+CutyCapt --min-width=1600  --url=http://www.matet.es --out=matet.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.montan.es montan.es.png
+CutyCapt --min-width=1600  --url=http://www.montan.es --out=montan.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.olocaudelrey.es olocaudelrey.es.png
+CutyCapt --min-width=1600  --url=http://www.olocaudelrey.es --out=olocaudelrey.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.palanques.es palanques.es.png
+CutyCapt --min-width=1600  --url=http://www.palanques.es --out=palanques.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.pavias.es pavias.es.png
+CutyCapt --min-width=1600  --url=http://www.pavias.es --out=pavias.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.pinademontalgrao.es pinademontalgrao.es.png
+CutyCapt --min-width=1600  --url=http://www.pinademontalgrao.es --out=pinademontalgrao.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.lapobladebenifassa.es lapobladebenifassa.es.png
+CutyCapt --min-width=1600  --url=http://www.lapobladebenifassa.es --out=lapobladebenifassa.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.lapoblatornesa.es lapoblatornesa.es.png
+CutyCapt --min-width=1600  --url=http://www.lapoblatornesa.es --out=lapoblatornesa.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.portelldemorella.es portelldemorella.es.png
+CutyCapt --min-width=1600  --url=http://www.portelldemorella.es --out=portelldemorella.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.puebladearenoso.es puebladearenoso.es.png
+CutyCapt --min-width=1600  --url=http://www.puebladearenoso.es --out=puebladearenoso.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.ribesalbes.es ribesalbes.es.png
+CutyCapt --min-width=1600  --url=http://www.ribesalbes.es --out=ribesalbes.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.sacanet.es sacanet.es.png
+CutyCapt --min-width=1600  --url=http://www.sacanet.es --out=sacanet.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.lasalzadella.es lasalzadella.es.png
+CutyCapt --min-width=1600  --url=http://www.lasalzadella.es --out=lasalzadella.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.santjoandemoro.es santjoandemoro.es.png
+CutyCapt --min-width=1600  --url=http://www.santjoandemoro.es --out=santjoandemoro.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.sanrafaeldelrio.es sanrafaeldelrio.es.png
+CutyCapt --min-width=1600  --url=http://www.sanrafaeldelrio.es --out=sanrafaeldelrio.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.sarratella.es sarratella.es.png
+CutyCapt --min-width=1600  --url=http://www.sarratella.es --out=sarratella.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.sierraengarceran.es sierraengarceran.es.png
+CutyCapt --min-width=1600  --url=http://www.sierraengarceran.es --out=sierraengarceran.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.soneja.es soneja.es.png
+CutyCapt --min-width=1600  --url=http://www.soneja.es --out=soneja.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.suera.es suera.es.png
+CutyCapt --min-width=1600  --url=http://www.suera.es --out=suera.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.tales.es tales.es.png
+CutyCapt --min-width=1600  --url=http://www.tales.es --out=tales.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.teresa.es teresa.es.png
+CutyCapt --min-width=1600  --url=http://www.teresa.es --out=teresa.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.tirig.es tirig.es.png
+CutyCapt --min-width=1600  --url=http://www.tirig.es --out=tirig.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.todolella.es todolella.es.png
+CutyCapt --min-width=1600  --url=http://www.todolella.es --out=todolella.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.toga.es toga.es.png
+CutyCapt --min-width=1600  --url=http://www.toga.es --out=toga.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.toras.es toras.es.png
+CutyCapt --min-width=1600  --url=http://www.toras.es --out=toras.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.torralbadelpinar.es torralbadelpinar.es.png
+CutyCapt --min-width=1600  --url=http://www.torralbadelpinar.es --out=torralbadelpinar.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.latorredenbesora.es latorredenbesora.es.png
+CutyCapt --min-width=1600  --url=http://www.latorredenbesora.es --out=latorredenbesora.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.torreendomenech.es torreendomenech.es.png
+CutyCapt --min-width=1600  --url=http://www.torreendomenech.es --out=torreendomenech.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.torrechiva.es torrechiva.es.png
+CutyCapt --min-width=1600  --url=http://www.torrechiva.es --out=torrechiva.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.traiguera.es traiguera.es.png
+CutyCapt --min-width=1600  --url=http://www.traiguera.es --out=traiguera.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.valldalba.es valldalba.es.png
+CutyCapt --min-width=1600  --url=http://www.valldalba.es --out=valldalba.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.valldealmonacid.es valldealmonacid.es.png
+CutyCapt --min-width=1600  --url=http://www.valldealmonacid.es --out=valldealmonacid.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.vallat.es vallat.es.png
+CutyCapt --min-width=1600  --url=http://www.vallat.es --out=vallat.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.vallibona.es vallibona.es.png
+CutyCapt --min-width=1600  --url=http://www.vallibona.es --out=vallibona.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.vilafames.es vilafames.es.png
+CutyCapt --min-width=1600  --url=http://www.vilafames.es --out=vilafames.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.vilanovadalcolea.es vilanovadalcolea.es.png
+CutyCapt --min-width=1600  --url=http://www.vilanovadalcolea.es --out=vilanovadalcolea.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.vilardecanes.es vilardecanes.es.png
+CutyCapt --min-width=1600  --url=http://www.vilardecanes.es --out=vilardecanes.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.lavilavella.es lavilavella.es.png
+CutyCapt --min-width=1600  --url=http://www.lavilavella.es --out=lavilavella.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.villahermosadelrio.es villahermosadelrio.es.png
+CutyCapt --min-width=1600  --url=http://www.villahermosadelrio.es --out=villahermosadelrio.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.villamalur.es villamalur.es.png
+CutyCapt --min-width=1600  --url=http://www.villamalur.es --out=villamalur.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.villanuevadeviver.es villanuevadeviver.es.png
+CutyCapt --min-width=1600  --url=http://www.villanuevadeviver.es --out=villanuevadeviver.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.villores.es villores.es.png
+CutyCapt --min-width=1600  --url=http://www.villores.es --out=villores.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.vistabelladelmaestrat.es vistabelladelmaestrat.es.png
+CutyCapt --min-width=1600  --url=http://www.vistabelladelmaestrat.es --out=vistabelladelmaestrat.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.xert.es xert.es.png
+CutyCapt --min-width=1600  --url=http://www.xert.es --out=xert.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.xodos.es xodos.es.png
+CutyCapt --min-width=1600  --url=http://www.xodos.es --out=xodos.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.zoritadelmaestrazgo.es zoritadelmaestrazgo.es.png
+CutyCapt --min-width=1600  --url=http://www.zoritadelmaestrazgo.es --out=zoritadelmaestrazgo.es.png
 sleep 5
-/usr/bin/wkhtmltoimage --width 1024 --height 768 --load-error-handling ignore www.zucaina.es zucaina.es.png
+CutyCapt --min-width=1600  --url=http://www.zucaina.es --out=zucaina.es.png
 sleep 5
 
 # Ara anem a copiar totes aquestes captures al directori "../ultimes_captures" per a que es mostren tambe al llistat de captures de
