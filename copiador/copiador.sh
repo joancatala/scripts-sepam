@@ -32,6 +32,12 @@ cp /etc/X11/xorg.conf .
 cp /etc/rc.conf .
 cp /boot/loader.conf .
 
+# Generem dos fitxers informatius amb totes les apliacions instal·lades a l'ordinador
+# i amb versio, kernel i espai en disc:aplicacions_instalades.txt i configuracio_ordinador.txt
+echo -e "######################################################################################################\nAplicacions instal·lades\n######################################################################################################" > aplicacions_instalades.txt && echo -e "  \n\n" >> configuracio_ordinador.txt && pkg info >> aplicacions_instalades.txt
+
+echo -e "######################################################################################################\nKernel\n######################################################################################################" > configuracio_ordinador.txt && uname -a >> configuracio_ordinador.txt && echo -e "  \n\n" >> configuracio_ordinador.txt && echo -e "######################################################################################################\nVersió de FreeBSD\n######################################################################################################" >> configuracio_ordinador.txt && freebsd-version >> configuracio_ordinador.txt && echo -e "  \n \n" >> configuracio_ordinador.txt && echo -e "######################################################################################################\nEspai en disc\n######################################################################################################" >> configuracio_ordinador.txt && df -h >> configuracio_ordinador.txt && echo -e "  \n\n" >> configuracio_ordinador.txt
+
 # Eixim i fem el tar.gz amb:
 cd ..
 tar cvfz $NOW.copia.tar.gz $NOW/
