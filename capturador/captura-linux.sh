@@ -4,16 +4,13 @@ i##############################################################################
 #                                                                            #
 # Responsables: grupotic@dipcas.es                                           #
 #                                                                            #
-# Actualizacion de 6 de gener 2016 para que funcione en las nuevas rutas     #
+# Actualizacion de 14 de marzo de 2017 para que funcione en la ruta        #
 # del servidor web NGINX y guardar las ultimas capturas en un directorio     #
 # separado para mostrarlas en el listado de capturas del Projecte Web        #
 # Municipal en http://sepam.dipcas.es/portals                                #
 #                                                                            #
 # Descarrega't el script a https://github.com/joancatala/scripts-sepam       #
 ##############################################################################
-
-#Notificamos con un e-mail que el capturador.sh se ha activado
-#echo "El script capturador inicia" | mail -s "Capturador se ha ejecutado" jcatala@dipcas.es
 
 #Preparamos la aplicacion en el directorio "captures" dentro de la raiz de nginx
 cd /home/pi/captures
@@ -25,9 +22,9 @@ mkdir $NOW
 cd $NOW
 
 #Empezamos a lanzar las capturas de pantalla amb cutycapt
-cutycapt --min-width=1600  --url=http://www.ajuntamentdain.es --out=ajuntamentdain.es.png
+xvfb-run --server-args="-screen 4, 1024x768x24" cutycapt --min-width=1600  --url=http://www.ajuntamentdain.es --out=ajuntamentdain.es.png
 sleep 5
-cutycapt --min-width=1600  --url=http://www.albocasser.es --out=albocasser.es.png
+xvfb-run --server-args="-screen 4, 1024x768x24" cutycapt --min-width=1600  --url=http://www.albocasser.es --out=albocasser.es.png
 sleep 5
 xvfb-run --server-args="-screen 4, 1024x768x24" cutycapt --min-width=1600  --url=http://www.lalcora.es --out=lalcora.es.png
 sleep 5
@@ -245,11 +242,19 @@ xvfb-run --server-args="-screen 4, 1024x768x24" cutycapt --min-width=1600  --url
 sleep 5
 xvfb-run --server-args="-screen 4, 1024x768x24" cutycapt --min-width=1600  --url=http://www.zucaina.es --out=zucaina.es.png
 sleep 5
+echo "Totes les captures han estat realitzades" | mutt -s "CUTYCAPT: Totes les captures han estat realitzades" joancatalapinyo@gmail.com
 
 # Ara anem a copiar totes aquestes captures al directori "../ultimes_captures" per a que es mostren tambe al llistat de captures de
 # pantalles a la web del Projecte Web Municipal http://sepam.dipcas.es/portals
 
 cp * ../ultimes_captures/.
+mogrify -resize 300x300 ../ultimes_captures/*
+cd ..
+
+# Fem els enviaments a RPi2
+scp -rp $NOW joan@192.168.1.105:/var/www/nuvolet/captures/.
+scp -rp ultimes_captures joan@192.168.1.105:/var/www/nuvolet/captures/.
 
 # Notificamos con un e-mail que el capturador.sh ha finalizado
-echo "El script ha finalizado guardando una captura de pantalla de todas las webs municipales y se han guardado en http://pwm.dipcas.es/captures/" | mail -s "Capturador se ha ejecutado" grupotic@dipcas.es
+#echo "El script ha finalizado guardando una captura de pantalla de todas las webs municipales y se han guardado en http://pwm.dipcas.es/captures/" | mail -s "Capturador se ha ejecutado" grupotic@dipcas.es
+echo "Enviades les captures a Raspberry Pi 2" | mutt -s "SCP: enviades les captures a Raspberry Pi 2" joancatalapinyo@gmail.com
