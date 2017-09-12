@@ -252,8 +252,8 @@ mogrify -resize 300x300 ../ultimes_captures/*
 cd ..
 
 # Fem els enviaments a RPi2
-scp -rp $NOW joan@192.168.1.105:/var/www/nuvolet/captures/.
-scp -rp ultimes_captures joan@192.168.1.105:/var/www/nuvolet/captures/.
+scp -rp $NOW joan@192.168.1.105:/usr/local/www/nginx/captures/.
+scp -rp ultimes_captures joan@192.168.1.105:/usr/local/www/nginx/captures/.
 
 # Notificamos con un e-mail que el capturador.sh ha finalizado
 #echo "El script ha finalizado guardando una captura de pantalla de todas las webs municipales y se han guardado en http://pwm.dipcas.es/captures/" | mail -s "Capturador se ha ejecutado" grupotic@dipcas.es
