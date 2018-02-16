@@ -1,7 +1,7 @@
 # cercador de paraules als portals municipals del Projecte Web Municipal
 # http://pwm.dipcas.es
 
-import urllib2
+import urllib2, os
 
 print "----------------------------------------"
 print "S'inicia el furoner"
@@ -103,7 +103,7 @@ pagines_web = ['http://www.ajuntamentdain.es',
 'http://www.toras.es',  
 'http://www.torralbadelpinar.es',  
 'http://www.latorredenbesora.es',  
-'http://www.torreendomenech.es',  
+'http://www.latorredendomenec.es',  
 'http://www.torrechiva.es',  
 'http://www.traiguera.es',  
 'http://www.valldalba.es', 
@@ -173,4 +173,6 @@ file = open("resultats_no.txt", "r")
 print file.read()
 
 wait = input("\nPULSA QUALSEVOL TECLA PER EIXIR DEL PROGRAMA...") 
-
+os.remove("index.txt")
+os.remove("resultats_si.txt")
+os.remove("resultats_no.txt")
