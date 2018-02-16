@@ -1,8 +1,7 @@
 # cercador de paraules als portals municipals del Projecte Web Municipal
 # http://pwm.dipcas.es
 
-import urllib2, commands
-
+import urllib2
 
 print "----------------------------------------"
 print "S'inicia el furoner"
@@ -92,7 +91,7 @@ pagines_web = ['http://www.ajuntamentdain.es',
 'http://www.lasalzadella.es', 
 'http://www.santjoandemoro.es',  
 'http://www.sanrafaeldelrio.es',  
-'http://www.sarratella.es',  
+'http://www.laserratella.es',  
 'http://www.sierraengarceran.es', 
 'http://www.soneja.es',  
 'http://www.suera.es',  
