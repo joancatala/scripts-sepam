@@ -1,22 +1,42 @@
 scripts-sepam
 =============
 
-Aquí dejamos algunos scripts que usamos en el SEPAM para diversas funciones
+Ací deixe alguns scripts que m'he creat per al SEPAM (Diputació de Castelló) per a controlar diferents tasques. 
+Web del SEPAM http://sepam.dipcas.es
+Web de la Diputació de Castelló http://www.dipcas.es
+
+pwm_caigut
+=============
+Aquest programa em serveix per comprovar si el servidor web on tenim els Drupal de les webs municipals està funcionant o està caigut. Vaig fer aquest script una època quan el servidor experimentava moltes caigudes.
+
+furoner_pwm
+=============
+Aquest programa busca una paraula que li diguem i fa una cerca global a la portada principal de totes les pàgines web municipals. Es poden veure totes les webs municipals a la pàgina principal del projecte (http://projectewebmunicipal.dipcas.es)
+
+virtualhosts_apache
+=============
+Aquest script genera tots els virtualhosts al fitxer de configuració de l'Apache del servidor web on instal·larem les webs municipals basades en Drupal. L'script m'ajuda a automatitzar tasques i fer-ho tot ràpidament.
+
+furoner_xarxa
+=============
+Aquest programa em fa un informe de C:\ i de C:\Users dels equips d'una xarxa LAN amb Windows, guarda les IPs actives de la xarxa al fitxer llistat.txt i el informe de fitxers i directoris al fitxer xarxa.txt
 
 capturador
 =============
-capturador es un shell script que mediante la aplicación wkhtmltoimage cada cinco segundos va capturando todas las portadas de las webs municipales adheridas al Projecte Web Municipal (http://pwm.dipcas.es) de la Diputación de Castellón.
+capturador és un script que, mitjançant wkhtmltoimage, em crea una captura de pantalla de totes les pàgines webs municipals automatitzat cada 5 segons. La web del Projecte Web Municipal, on tenim l'enllaç a les webs municipals de la província de Castelló és http://projectewebmunicipal.dipcas.es
 
-Deja las capturas en formato PNG en la ruta /var/www/html/captures de la màquina
+capturador deixa les captures en format PNG a la ruta /var/www/html/captures del servidor web
 
-monitorizar (para eadmin y preeadmin)
+monitorizar (per a eadmin i preeadmin)
 =============
-Es un shell script que nos sirve de menú y lanzador de diversas utilidades (reiniciar máquinas, reiniciar Apache y Tomcat, ver sus procesos activos, etc.
+Aquest és un script que ens serveix de menú principal de gestió dels servidors de l'Administració Electrónica instal·lada ací al datacenter de la Diputació amb un bus que connecta amb diferents serveis d'altres servidors de la Generalitat Valenciana. Les tasques que automatitza aquest script són reiniciar Apache, reiniciar Tomcat, mirar processos actuals, reiniciar màquines, etc.
 
 PyNotificador
 =============
-Este programa envía un correo a todos los e-mails de los Ayuntamientos con sus datos de responsable de la web municipal, teléfono y dominio, para que los Ayuntamientos los corrijan en caso de algún error o algún cambio de personal. Ejecutamos este programita python el día 1 cada 2 meses.
+Aquest programa envia una notificació a tots els ajuntaments, agafant la informació del responsable de la web municipal, el telèfon de l'Ajuntament, el domini de la web, etc, per a que els Ajuntaments revisen si les seues dades són correctes i si les tenim actualitzades.
 
 copiador
 =============
 Aquest programa em serveix com un empaquetador de les meues copies de seguretat i fitxers importants dels meus equipos i els puja directament al meu Dropbox (que previament he configurat amb la utilitat dropbox_uploader.sh". El pots modificar i configurar molt fàcilment.
+
+
